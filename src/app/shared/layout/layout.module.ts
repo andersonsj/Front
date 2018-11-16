@@ -4,13 +4,15 @@ import { EmptyLayoutComponent } from './app-layouts/empty-layout/empty-layout.co
 import { MainLayoutComponent } from './app-layouts/main-layout/main-layout.component';
 import { HeaderModule } from './header/header.module';
 import { NavigationModule } from './navigation';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
   imports: [
     CommonModule,
     HeaderModule,
-    NavigationModule
+    NavigationModule,
+    RouterModule
   ],
   declarations: [
     EmptyLayoutComponent,
