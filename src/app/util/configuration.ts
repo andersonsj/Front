@@ -7,14 +7,20 @@
 import { Injectable } from '@angular/core';
 import { HomeComponent } from '../component/home/home.component';
 import { from } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Injectable()
 export class Configuration {
 
+    constructor() {
+        this.servidor = environment.ip;
+        console.log(this.servidor);
+    }
+
     /**
      * Definicion de direccion IP en la cual se encuentran almacenados los servicios.
      */
-    private servidor = 'http://10.23.18.240:';
+    private servidor = environment.ip;
 
     /**
      * Declaracion de puertos segun cada tipo entidad.

@@ -6,6 +6,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './component/home/home.component';
 import { ClienteComponent } from './component/cliente/cliente.component';
 import { UrlproviderService } from './util/endpoint/urlprovider.service';
+import { FooterComponent } from './shared/layout/footer/footer.component';
+import { HeaderComponent } from './shared/layout/header/header.component';
+import { LayoutModule } from './shared/layout/layout.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,8 @@ import { UrlproviderService } from './util/endpoint/urlprovider.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LayoutModule
   ],
   providers: [UrlproviderService],
   bootstrap: [AppComponent]
