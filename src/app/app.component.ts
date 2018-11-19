@@ -6,7 +6,7 @@ import { environment } from 'src/environments/environment';
   template: '<router-outlet></router-outlet>'
 })
 export class AppComponent {
-  title = 'FrontAsesoria';
+  public title = 'FrontAsesoria';
 
   ambiente: string;
 

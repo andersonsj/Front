@@ -1,13 +1,18 @@
-<header id="header">
+<header id="header" class="header">
 
-  <div id="logo-group">
-    <span id="logo"> <img src="assets/img/logo.png" alt="Homecenter"> </span>
-  </div>
+  <nav class="navbar-brand">
 
-  <div class="pull-left">
+    <div class="container-fluid md">
+      <div class="pull-left col-md-3 col-6" >
+        <app-collapse-menu></app-collapse-menu>
+      </div>
 
-    <app-collapse-menu></app-collapse-menu>
+      <div class="pull-left col-md-3 col-6" id="logo-group">
+        <span id="logo"><img src="assets/img/Homecenter.png" alt="Homecenter"></span>
+        <a class="navbar-brand" routerLink="/">Homecenter</a>
+      </div>
 
-  </div>
+    </div>
+  </nav>
 
 </header>

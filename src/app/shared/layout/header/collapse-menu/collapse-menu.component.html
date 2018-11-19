@@ -1,15 +1,15 @@
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" (click)='closeNav()'>&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
-
-<div id="main" class="btn-header pull-left">
   <table>
-    <tr><span><a><i class="fa fa-reorder" style='font-size:24px;color:grey' (click)='openNav()'></i></a></span></tr>
-    <tr><span><a><i class="fa fa-home" style='font-size:24px;color:grey' (click)='openNav()'></i></a></span></tr>
-    <tr><span><a><i class="fa fa-users" style='font-size:22px;color:grey' (click)='openNav()'></i></a></span></tr>
+    <tr><span><a href="#" (click)='manejoNav()'><i class="fa fa-reorder"></i></a></span></tr>
+    <tr><span><a href="#"><i class="fa fa-home"></i>{{Home}}</a></span></tr>
+    <tr><span><a href="#"><i class="fa fa-users"></i>{{consultaCliente}}</a></span></tr>
   </table>
 </div>
+
+<!-- <div id="main" class="btn-header pull-left">
+  <table>
+    <tr><span><a><i class="fa fa-reorder" (click)='openNav()'></i></a></span></tr>
+    <tr><span><a><i class="fa fa-home" (click)='openNav()'></i></a></span></tr>
+    <tr><span><a><i class="fa fa-users" (click)='openNav()'></i></a></span></tr>
+  </table>
+</div> -->
