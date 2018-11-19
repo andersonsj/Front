@@ -2,3 +2,12 @@
     background: white;
     box-shadow: 5px 2px 14px #888888
 }
+
+.header img{
+    vertical-align: baseline;
+}
+
+.header a{
+    color: red;
+    font-weight: bold;
+}
