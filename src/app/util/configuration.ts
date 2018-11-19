@@ -60,5 +60,9 @@ export class Configuration {
     * Estrctura completa apis Producto.
     */
     public consutarCatalogoApiUrl = this.servidor + this.puertoProducto + this.apiUrlConCatalogo;
-
+    
+    /**oswl
+    * Estructura consumo servicio de consulta de tienda.
+    */
+    public consultarTiendaPorIp = ""
 }

@@ -6,6 +6,9 @@ import { BuscarProductoComponent } from './buscar-producto/buscar-producto.compo
   imports: [
     CommonModule
   ],
-  declarations: [BuscarProductoComponent]
+  declarations: [BuscarProductoComponent],
+  exports: [
+    BuscarProductoComponent
+  ]
 })
 export class ProductoModule { }
