@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BuscarComponent } from './buscar/buscar.component';
-
+import { BuscarClienteComponent } from './buscar-cliente/buscar-cliente.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [BuscarComponent]
+  declarations: [BuscarClienteComponent]
 })
 export class ClienteModule { }
