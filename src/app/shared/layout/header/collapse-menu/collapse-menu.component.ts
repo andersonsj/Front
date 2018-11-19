@@ -9,6 +9,7 @@ export class CollapseMenuComponent implements OnInit {
 
   private Home: string;
   private consultaCliente: string;
+  private estadoNav = 0;
   constructor() {
 
   }
@@ -26,23 +27,25 @@ export class CollapseMenuComponent implements OnInit {
   }
 
   closeNav() {
-    document.getElementById('mySidenav').style.width = '60px';
+    document.getElementById('mySidenav').style.width = '70px';
     document.getElementById('main').style.marginLeft = '0';
   }
 
   manejoNav() {
 
-    if (document.getElementById('mySidenav').style.width = '60px') {
+    if (this.estadoNav === 0) {
       document.getElementById('mySidenav').style.width = '250px';
       document.getElementById('main').style.marginLeft = '250px';
       this.Home = ' Home';
       this.consultaCliente = ' Consultar cliente';
+      this.estadoNav = 1;
       console.log('Primer if');
-    } else if (document.getElementById('mySidenav').style.width = '250px') {
-      document.getElementById('mySidenav').style.width = '60px';
+    } else if (this.estadoNav !== 0) {
+      document.getElementById('mySidenav').style.width = '70px';
       document.getElementById('main').style.marginLeft = '0';
       this.Home = '';
       this.consultaCliente = '';
+      this.estadoNav = 0;
       console.log('Segundo if');
     } else {
 
