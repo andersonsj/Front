@@ -1,0 +1,26 @@
+<div class="container col">
+    <h2 class="text-center">Agregar Cliente</h2>
+    <form [formGroup]="addForm" (ngSubmit)="login()">
+
+        <div class="form-group">
+            <label for="usuariologin">Usuario :</label>
+            <input formControlName="usuariologin" placeholder="Nombre" name="usuariologin" class="form-control" id="usuariologin"
+                required>
+        </div>
+
+        <div class="form-group">
+            <label for="contaseñalogin">Contraseña :</label>
+            <input formControlName="contaseñalogin" placeholder="Apellido" name="contaseñalogin" class="form-control"
+                id="contaseñalogin" required>
+        </div>
+
+        <div class="form-group">
+            <label for="idalmacen">Almacen:</label>
+            <input type="idalmacen" formControlName="idalmacen" placeholder="idalmacen" name="idalmacen" class="form-control"
+                id="idalmacen" required>
+        </div>
+
+        <button class="btn btn-success">Aceptar</button>
+        <button class="btn btn-primary">Regresar</button>
+    </form>
+</div>

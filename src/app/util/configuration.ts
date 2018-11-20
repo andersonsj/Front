@@ -5,8 +5,6 @@
  */
 
 import { Injectable } from '@angular/core';
-import { HomeComponent } from '../component/home/home.component';
-import { from } from 'rxjs';
 import { environment } from 'src/environments/environment';
 
 @Injectable()
@@ -38,7 +36,7 @@ export class Configuration {
     /**
     * URLs de apis establecitas para la consultar, guardar o cambiar estados del empleado.
     */
-    private apiUrlValidarEmpleado = 'api/empleado/validar';
+    private apiUrlValidarEmpleado = 'empleado/api/empleado/validar';
 
     /**
     * URLs de apis establecitas para la consultar, guardar o cambiar estados del productos.
@@ -60,9 +58,9 @@ export class Configuration {
     * Estrctura completa apis Producto.
     */
     public consutarCatalogoApiUrl = this.servidor + this.puertoProducto + this.apiUrlConCatalogo;
-    
+
     /**oswl
     * Estructura consumo servicio de consulta de tienda.
     */
-    public consultarTiendaPorIp = ""
+    public consultarTiendaPorIp = '';
 }
