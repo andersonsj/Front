@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-collapse-menu',
   templateUrl: './collapse-menu.component.html',
-  styleUrls: ['/collapse-menu.component.css']
+  styleUrls: ['./collapse-menu.component.css']
 })
 export class CollapseMenuComponent implements OnInit {
 

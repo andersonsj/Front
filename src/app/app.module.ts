@@ -12,6 +12,11 @@ import { Routing } from './app-routing';
 import { CoreModule } from './core/core.module';
 import { ClienteModule } from './component/cliente/cliente.module';
 
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ClienteService } from './core/services/cliente/cliente.service';
+import { Configuration } from './Util/configuration';
+
 
 @NgModule({
   declarations: [
@@ -20,6 +25,8 @@ import { ClienteModule } from './component/cliente/cliente.module';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     Routing,
     LayoutModule,
     EmpleadoModule,
@@ -28,7 +35,7 @@ import { ClienteModule } from './component/cliente/cliente.module';
     ClienteModule
 
   ],
-  providers: [UrlproviderService],
+  providers: [UrlproviderService, Configuration],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
