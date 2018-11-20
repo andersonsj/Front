@@ -1,0 +1,59 @@
+ 
+  h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+  }
+ #containerBusqueda {
+    align-content: center;
+    float: initial;
+    padding-top: 10%;
+ }
+ #containerBuscador {
+    padding-top: 15px;
+    padding-bottom: 17px;
+    align-content: center;
+ }
+ #formBusquedaProducto {
+    align-items: center;
+    text-align: center;
+ }
+  
+ #txt_buscador {
+     width: 50%;
+     display: initial;
+ }
+
+ #btn_buscarProd {
+    width: 12%;
+    display: initial;
+    margin-top: 20px;
+ }
+/*---------------------------------------------*/
+ 
+  .inner-addon {
+    position: relative;
+    display: initial;
+ 
+  }
+  .inner-addon .fa {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+    padding-top: 16px;
+    padding-right: 22px;
+    color: rgb(184, 182, 182);
+  }
+  .left-addon .fa {
+    left: 0px;
+    display: initial;
+  }
+  /*.right-addon .glyphicon {
+    right: 0px;
+  }*/
+  .left-addon input {
+    padding-left: 30px;
+  }
+  /*.right-addon input {
+    padding-right: 30px;
+  }*/
