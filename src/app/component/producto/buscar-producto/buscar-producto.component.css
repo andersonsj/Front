@@ -1,25 +1,32 @@
+  .containerBuscador-principal {
+    align-items: center;
+    text-align: center;
+  }
 
-  h2 {
+  .containerBuscador-principal h2 {
     color: black;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
   }
+
  #containerBusqueda {
     align-content: center;
     float: initial;
     padding-top: 10%;
  }
+
  #containerBuscador {
     padding-top: 15px;
     padding-bottom: 17px;
     align-content: center;
  }
+
  #formBusquedaProducto {
     align-items: center;
     text-align: center;
  }
   
- #txt_buscador {
+ #txtBuscador {
      width: 50%;
      display: initial;
  }
@@ -30,8 +37,7 @@
     margin-top: 20px;
  }
 /*---------------------------------------------*/
- 
-  .inner-addon {
+   .inner-addon {
     position: relative;
     display: initial;
  
@@ -40,7 +46,7 @@
     position: absolute;
     padding: 10px;
     pointer-events: none;
-    padding-top: 16px;
+    /*padding-top: 10px;*/
     padding-right: 22px;
     color: rgb(184, 182, 182);
   }
@@ -48,12 +54,8 @@
     left: 0px;
     display: initial;
   }
-  /*.right-addon .glyphicon {
-    right: 0px;
-  }*/
+
   .left-addon input {
     padding-left: 30px;
   }
-  /*.right-addon input {
-    padding-right: 30px;
-  }*/
+ 

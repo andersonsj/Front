@@ -16,7 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ClienteService } from './core/services/cliente/cliente.service';
 import { Configuration } from './Util/configuration';
-
+ 
 
 @NgModule({
   declarations: [
