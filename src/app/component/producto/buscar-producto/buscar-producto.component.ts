@@ -8,7 +8,10 @@ import { Estacion } from 'src/app/core/model/estacion';
 })
 export class BuscarProductoComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+
+
+  ) { }
   public resultado: any;
   public mensaje: any;
   public autenticar: any;

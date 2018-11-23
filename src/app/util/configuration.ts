@@ -37,6 +37,7 @@ export class Configuration {
     * URLs de apis establecitas para la consultar, guardar o cambiar estados del empleado.
     */
     private apiUrlValidarEmpleado = 'empleado/api/empleado/validar';
+    private apiUrlConsultaIdEmple = 'empleado/api/empleado/validar';
 
     /**
     * URLs de apis establecitas para la consultar, guardar o cambiar estados del productos.
@@ -53,6 +54,7 @@ export class Configuration {
     * Estrctura completa apis Empleado.
     */
     public validarEmpleadoApiUrl = this.servidor + this.puertoEmpleado + this.apiUrlValidarEmpleado;
+    public consultaIdEmpleApiUrl = this.servidor + this.puertoEmpleado + this.apiUrlConsultaIdEmple;
 
     /**
     * Estrctura completa apis Producto.

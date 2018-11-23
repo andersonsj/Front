@@ -1,7 +1,7 @@
 export class Autenticar {
 
     idlogin: number;
-    usuariologin: String;
-    contaseñalogin: String;
+    usuariologin: string;
+    contaseñalogin: string;
     idalmacen: number;
 }

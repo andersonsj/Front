@@ -3,7 +3,7 @@ import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-root',
-  template: '<router-outlet></router-outlet>'
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
   public title = 'FrontAsesoria';
