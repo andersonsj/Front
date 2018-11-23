@@ -1,7 +1,16 @@
-<div id="mySidenav" class="sidenav" >
+<div id="mySidenav" class="sidenav">
   <table>
-    <tr><span><a href="#" (click)='manejoNav()'><i class="fa fa-reorder" title="Abrir o cerrar menu lateral"></i></a></span></tr>
-    <tr><span><a href="#"><i class="fa fa-home" title="Ir a la pagina principal"></i>{{Home}}</a></span></tr>
-    <tr><span><a href="#"><i class="fa fa-users " title="Ir a consultar clientes"></i>{{consultaCliente}}</a></span></tr>
+    <tr><span><a (click)='manejoNav()'><i class="fa fa-reorder" title="Abrir o cerrar menu lateral"></i></a></span></tr>
+    <tr>
+      <span>
+        <a>
+          <i class="fa fa-home" title="Ir a la pagina principal">
+          </i>
+          {{Home}}
+        </a>
+      </span>
+    </tr>
+    <tr><span><a><i class="fa fa-users " title="Ir a consultar clientes"></i>{{consultaCliente}}</a></span></tr>
   </table>
+
 </div>

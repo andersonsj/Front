@@ -16,7 +16,6 @@ export class AutenticarEmpleadoComponent implements OnInit {
  
   ngOnInit() {
     this.addForm = this.formBuilder.group({
-
       usuariologin: ['', Validators.required],
       contaseñalogin: ['', Validators.required],
       idalmacen: ['', Validators.required]

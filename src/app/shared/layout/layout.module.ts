@@ -7,6 +7,7 @@ import { HeaderModule } from './header/header.module';
 import { NavigationModule } from './navigation';
 import { RouterModule } from '@angular/router';
 import { EmpleadoModule } from 'src/app/component/empleado/empleado.module';
+import { ClienteModule } from 'src/app/component/cliente/cliente.module';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { EmpleadoModule } from 'src/app/component/empleado/empleado.module';
     NavigationModule,
     ProductoModule,
     EmpleadoModule,
-    RouterModule
+    RouterModule,
+    ClienteModule
   ],
   declarations: [
     EmptyLayoutComponent,
@@ -26,7 +28,9 @@ import { EmpleadoModule } from 'src/app/component/empleado/empleado.module';
     HeaderModule,
     NavigationModule,
     ProductoModule,
-    EmpleadoModule
+    EmpleadoModule,
+    ClienteModule,
+    MainLayoutComponent
   ]
 })
 export class LayoutModule { }
