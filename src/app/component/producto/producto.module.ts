@@ -15,7 +15,7 @@ import { ProductoRouting } from 'src/app/core/routes/producto.routing';
     ProductoRouting,
     ReactiveFormsModule
   ],
-  declarations: [BuscarProductoComponent, ListarProductoComponent,ProductoComponent],
+  declarations: [BuscarProductoComponent, ListarProductoComponent, ProductoComponent],
   exports: [
     BuscarProductoComponent
   ]

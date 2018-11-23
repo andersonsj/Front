@@ -6,18 +6,14 @@ import { Configuration } from 'src/app/Util/configuration';
 
 @Injectable({
   providedIn: 'root'
-}) 
+})
 export class ProductoService {
   private httpHeaders = new HttpHeaders({ 'Content-Type': 'application/json' });
   constructor(private http: HttpClient, private configuration: Configuration) { }
-    
-  /*getBuscarProductos(prod: Producto): Observable<Producto> {
-    return this.http.post<Producto>(this.configuration.consutarCatalogoApiUrl, prod, { headers: this.httpHeaders });
-  }*/
- 
-  getBuscarProductos(producto: any): Observable<any> {
-    console.log("info producto: "+producto);
-      return this.http.get(this.configuration.consutarCatalogoApiUrl+producto+"&$filter=idZona%20eq%2041&$top=10&$skip=20&$count=true&$select=sku,nombre,precio,ficha");
-    }
+
+  getBuscarProductos(producto: any): Observable<any> {
+    const complemento = '&$filter=idZona%20eq%2041&$top=10&$skip=20&$count=true&$select=sku,nombre,precio,ficha';
+    console.log('info producto: ' + producto);
+    return this.http.get(this.configuration.consutarCatalogoApiUrl + producto + complemento);
+  }
 }
-  
