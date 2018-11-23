@@ -25,7 +25,6 @@ import { NavigationComponent } from './shared/layout/navigation/navigation.compo
 import { MainLayoutComponent } from './shared/layout/app-layouts/main-layout/main-layout.component';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
