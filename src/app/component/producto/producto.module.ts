@@ -13,10 +13,10 @@ import { ProductoRouting } from 'src/app/core/routes/producto.routing';
 @NgModule({
   imports: [
     CommonModule,
-    ProductoRouting
+    ProductoRouting,
     ReactiveFormsModule
   ],
-  declarations: [BuscarProductoComponent, ListarProductoComponent,ProductoComponent],
+  declarations: [BuscarProductoComponent, ListarProductoComponent, ProductoComponent],
   exports: [
     BuscarProductoComponent
   ]

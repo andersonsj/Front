@@ -11,15 +11,11 @@ import { AlmacenService } from 'src/app/core/services/tienda/almacen.service';
 })
 export class BuscarProductoComponent implements OnInit {
 
-  constructor(private formBuilder: FormBuilder, private productoService: ProductoService, 
+  constructor(private formBuilder: FormBuilder, private productoService: ProductoService,
     private almacenService: AlmacenService) { }
 
   buscarForm: FormGroup;
-  constructor(
 
-
-  ) { }
-  
   public resultado: any;
   public mensaje: any;
   public autenticar: any;
@@ -33,23 +29,23 @@ export class BuscarProductoComponent implements OnInit {
       txtBuscador: ['', Validators.required]
     });
     let ip;
-    ip = localStorage.getItem("ipEquipo");
+    ip = localStorage.getItem('ipEquipo');
     this.estacion.ipEstacion = ip;
     /*
     this.identificarTiendaPorIp();
     A la espera de servicio back para consultar tienda
     */
-  } 
+  }
 
   identificarTiendaPorIp() {
-    console.log("IP estacion: "+this.estacion.ipEstacion);//probar captura de IP al cargar página
+    console.log('IP estacion:' + this.estacion.ipEstacion); /**probar captura de IP al cargar página */
     this.almacenService.postIdentificarTienda(this.estacion).subscribe(data => data);
   }
 
   buscarProducto() {
-    let idproducto : any;
+    let idproducto: any;
     idproducto = this.buscarForm.get('txtBuscador').value;
-    console.log("valor del campo producto: "+idproducto);
+    console.log('valor del campo producto: ' + idproducto);
     this.productoService.getBuscarProductos(idproducto).subscribe(data => data);
   }
 
