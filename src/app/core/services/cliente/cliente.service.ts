@@ -17,4 +17,8 @@ export class ClienteService {
     return this.http.post<Autenticar>(this.configuration.validarEmpleadoApiUrl, autenticar, { headers: this.httpHeaders });
   }
 
+  getAutenticar(): Observable<any> {
+    return this.http.get(this.configuration.consultaIdEmpleApiUrl);
+  }
+
 }

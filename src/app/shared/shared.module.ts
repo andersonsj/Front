@@ -1,16 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderModule } from './layout/header/header.module';
-import { MainLayoutComponent } from './layout/app-layouts/main-layout/main-layout.component';
+
+import { ClienteModule } from '../component/cliente/cliente.module';
+import { RouterModule } from '@angular/router';
+import { LayoutModule } from './layout';
 
 @NgModule({
   imports: [
     CommonModule,
-    HeaderModule
+    HeaderModule,
+    ClienteModule,
+    RouterModule
   ],
-  declarations: [MainLayoutComponent],
+  declarations: [],
   exports: [
-    HeaderModule
+    CommonModule,
+    RouterModule,
+    LayoutModule
   ]
 })
 export class SharedModule { }

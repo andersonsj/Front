@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, RootRenderer } from '@angular/core';
+import { Route } from '@angular/router';
 
 @Component({
   selector: 'app-buscar-empleado',
