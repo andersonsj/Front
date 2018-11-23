@@ -18,12 +18,12 @@ import { CoreModule } from './core/core.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { Configuration } from './Util/configuration';
+
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { HomeModule } from './component/home/home.module';
 import { NavigationComponent } from './shared/layout/navigation/navigation.component';
 import { MainLayoutComponent } from './shared/layout/app-layouts/main-layout/main-layout.component';
-
 
 
 @NgModule({

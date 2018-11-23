@@ -1,17 +1,17 @@
-<div id="containerBusqueda" class="form-group">
-  <FORM id="formBusquedaProducto" method=GET>
-    <div class="form-group">
-      <h2>¿Qué producto buscas?</h2>
+<div id="containerBusqueda" class="containerBuscador-principal form-group">
+  
+  <div class="form-group">
+    <span id="ip"></span>
+    <h2>¿Qué producto buscas?</h2>
+  </div>
+  <form [formGroup]="buscarForm">
+    <div id="containerBuscador" class="form-group inner-addon left-addon">
+      <i class="fa fa-search"></i>
+      <input class="form-control" id="txtBuscador" name="txtBuscador" formControlName="txtBuscador" type="text" placeholder="Escribe el sku del producto..."/>                        
     </div>
-    <fieldset>
-      <div id="containerBuscador" class="form-group inner-addon left-addon">
-        <i class="fa fa-search"></i>
-        <INPUT class="form-control" TYPE=text id="txt_buscador" name="txt_buscador" value="" size="100" placeholder="Escribe el sku o nombre del producto..." />
-      </div>
-      <div class="form-group" id="btnBuscarProducto">
-        <input class="btn btn-primary" type="button" id="btn_buscarProd" name="btn_buscarProd" value="Buscar"
-          routerLink="/listarProductos" routerLinkActive="active">
-      </div>
-    </fieldset>
-  </FORM>
+
+    <div class="form-group" id="btnBuscarProducto">
+      <button class="btn btn-primary" id="btn_buscarProd" (click)="buscarProducto()" routerLink="/listarProductos" routerLinkActive="active">Buscar</button>
+    </div>
+  </form>
 </div>

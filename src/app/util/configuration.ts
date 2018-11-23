@@ -42,7 +42,7 @@ export class Configuration {
     /**
     * URLs de apis establecitas para la consultar, guardar o cambiar estados del productos.
     */
-    private apiUrlConCatalogo = 'api/producto/catalogo';
+    private apiUrlConCatalogo = 'productos/api/producto/catalogo?search=';
 
     /**
     * Estrctura completa apis Cliente.
@@ -62,7 +62,7 @@ export class Configuration {
     public consutarCatalogoApiUrl = this.servidor + this.puertoProducto + this.apiUrlConCatalogo;
 
     /**oswl
-    * Estructura consumo servicio de consulta de tienda.
+    * Estructura consumo servicio de consulta de tienda
     */
-    public consultarTiendaPorIp = '';
+    public consultarTiendaPorIpApiUrl = this.servidor+this.puertoProducto;
 }
