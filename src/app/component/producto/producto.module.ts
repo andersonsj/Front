@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BuscarProductoComponent } from './buscar-producto/buscar-producto.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ListarProductoComponent } from './listar-producto/listar-producto/listar-producto.component';
 
 
 @NgModule({
@@ -9,7 +10,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     ReactiveFormsModule
   ],
-  declarations: [BuscarProductoComponent],
+  declarations: [BuscarProductoComponent, ListarProductoComponent],
   exports: [
     BuscarProductoComponent
   ]
