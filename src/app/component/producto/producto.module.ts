@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { ListarProductoComponent } from './listar-producto/listar-producto.component';
 import { ProductoComponent } from './producto.component';
 import { ProductoRouting } from 'src/app/core/routes/producto.routing';
+import { DetalleProductoComponent } from './detalle-producto/detalle-producto.component';
 
 
 @NgModule({
@@ -16,9 +17,10 @@ import { ProductoRouting } from 'src/app/core/routes/producto.routing';
     ProductoRouting,
     ReactiveFormsModule
   ],
-  declarations: [BuscarProductoComponent, ListarProductoComponent, ProductoComponent],
+  declarations: [BuscarProductoComponent, ListarProductoComponent, ProductoComponent, DetalleProductoComponent],
   exports: [
-    BuscarProductoComponent
-  ]
+    BuscarProductoComponent,
+    DetalleProductoComponent
+      ]
 })
 export class ProductoModule { }

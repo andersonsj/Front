@@ -1,3 +1,19 @@
 <p>
-Aqui debo armar la lista de productos
+    Aqui debo armar la lista de productos
 </p>
+
+
+<div class="container-fluid">
+
+    <div>
+        <div class="row">
+            <div class="col bg-light col-md-3" *ngFor="let producto of datos">
+                <img src="assets/img/Sofa.jpg" class="img-thumbnail" alt="Responsive image">
+                <h5>{{producto.nombre}}</h5>
+                <h6>Sku {{producto.sku}}</h6>
+                <h4>${{producto.precio}}</h4>
+            </div>
+        </div>
+    </div>
+
+</div>
