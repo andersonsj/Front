@@ -11,6 +11,11 @@ import { AlmacenService } from 'src/app/core/services/tienda/almacen.service';
 })
 export class BuscarProductoComponent implements OnInit {
 
+  private producto: any;
+  private buscar: string;
+  private dataProducto: any;
+  public datos: any[];
+
   constructor(private formBuilder: FormBuilder, private productoService: ProductoService,
     private almacenService: AlmacenService) { }
 
@@ -41,11 +46,25 @@ export class BuscarProductoComponent implements OnInit {
     this.almacenService.postIdentificarTienda(this.estacion).subscribe(data => data);
   }
 
+
+
   buscarProducto() {
-    let idproducto: any;
+    /*let idproducto: any;
     idproducto = this.buscarForm.get('txtBuscador').value;
     console.log('valor del campo producto: ' + idproducto);
-    this.productoService.getBuscarProductos(idproducto).subscribe(data => data);
+    this.productoService.getBuscarProductos(idproducto).subscribe(
+      (data) => {
+        this.datos = data.value;
+        this.producto = data.value;
+        console.log(this.producto);
+        console.log(this.datos);
+        console.log(this.producto[0].sku);
+
+      }
+    ); */
+
+    localStorage.setItem('buscar', this.buscarForm.get('txtBuscador').value);
+
   }
 
 }
