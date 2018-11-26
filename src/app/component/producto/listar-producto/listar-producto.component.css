@@ -53,3 +53,19 @@
     color: #2e3239;
 
 }
+
+.col-1{
+    position: relative;
+    z-index:0;
+}
+
+.col-2{
+    background-color: gray;
+    opacity: 0,5%;
+    position: relative;
+    z-index:1;
+}
+
+rowcont-principal{
+    position: absolute;
+}

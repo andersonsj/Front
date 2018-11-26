@@ -1,6 +1,4 @@
-<p>
-    Aqui debo armar la lista de productos
-</p>
+<app-buscador></app-buscador>
 
 
 
@@ -12,14 +10,30 @@
 
     <br>
 
-    <div class="row center">
-        <div class="col bg-transparent col-md-3" *ngFor="let producto of datos">
+    <div class="row center cont-principal" >
+        <div class="info-producto col-md-3" *ngFor="let producto of datos ">
+        <div class="col-2 col-md-12"  >
+            <div id="containerBuscador" class="form-group containerBuscador-txt-producto inner-addon left-addon">
+                    <button class="btn btn-primary" id="btn_buscarProd" (click)="buscarProducto()" routerLink="/listarProductos" routerLinkActive="active">Buscar</button>
+                        <input class="form-control" id="txtBuscador" name="txtBuscador" formControlName="txtBuscadorGeneral" type="text"
+                          placeholder="Escribe el sku del producto..." />
+                          <button class="btn btn-primary" id="btn_buscarProd" (click)="buscarProducto()" routerLink="/listarProductos" routerLinkActive="active">Buscar</button>
+            </div>
+            <div class="form-group containerBuscador-btn-producto" id="btnBuscarProducto">
+                <button class="btn btn-primary" id="btn_buscarProd" (click)="buscarProducto()" routerLink="/listarProductos" routerLinkActive="active">Buscar</button>
+            </div>
+            <div class="form-group containerBuscador-btn-producto" id="btnBuscarProducto">
+                <button class="btn btn-primary" id="btn_buscarProd" (click)="buscarProducto()" routerLink="/listarProductos" routerLinkActive="active">Buscar</button>
+            </div>
+        </div>
+        <div class="col-1 col-md-12">
             <img src="https://homecenterco.scene7.com/is/image/SodimacCO/{{producto.sku}}_1?wid=400&amp;hei=400" class="img-thumbnail" alt="Responsive image">
             <h5>{{producto.nombre}}</h5>
             <h6>Sku {{producto.sku}}</h6>
             <h4>${{producto.precio}}</h4>
             <br>
         </div>
+    </div>        
     </div>
 
 </div>
