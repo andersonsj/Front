@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductoService } from './../../../../app/core/services/producto/producto.service';
+
 
 @Component({
   selector: 'app-buscador',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BuscadorComponent implements OnInit {
 
-  constructor() { }
+  public buscar: string;
+  private datos: any;
+  constructor(private productoService: ProductoService) { }
 
   ngOnInit() {
+  }
+
+  buscarProducto() {
+
+    this.productoService.getBuscarProductos(this.buscar).subscribe(
+      (data) => {
+        this.datos = data.value;
+        console.log(this.datos);
+        console.log(data);
+
+      }
+    );
   }
 
 }
