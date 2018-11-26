@@ -12,7 +12,7 @@ export class ProductoService {
   constructor(private http: HttpClient, private configuration: Configuration) { }
 
   getBuscarProductos(producto: any): Observable<any> {
-    const complemento = '&$filter=idZona%20eq%2041&$top=4&$skip=100&$count=true&$select=sku,nombre,precio,ficha';
+    const complemento = '&$filter=idZona%20eq%2041&$top=1000&$skip=0&$count=true&$select=sku,nombre,precio,ficha';
     console.log('info producto: ' + producto);
     return this.http.get(this.configuration.consutarCatalogoApiUrl + producto + complemento);
   }
