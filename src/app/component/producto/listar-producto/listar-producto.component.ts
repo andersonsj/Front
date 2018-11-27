@@ -7,7 +7,7 @@ import { ProductoService } from 'src/app/core/services/producto/producto.service
   styleUrls: ['./listar-producto.component.css']
 })
 export class ListarProductoComponent implements OnInit {
-
+ 
   public buscar: string;
   private datos: any;
 

@@ -20,7 +20,6 @@ export class BuscarProductoComponent implements OnInit {
     private almacenService: AlmacenService) { }
 
   buscarForm: FormGroup;
-
   public resultado: any;
   public mensaje: any;
   public autenticar: any;

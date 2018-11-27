@@ -6,6 +6,9 @@ import { BuscadorComponent } from './buscador.component';
   imports: [
     CommonModule
   ],
-  declarations: [BuscadorComponent]
+  declarations: [BuscadorComponent],
+  exports:[
+    BuscadorComponent
+  ]
 })
 export class BuscadorModule { }

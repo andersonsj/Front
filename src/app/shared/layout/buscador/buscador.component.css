@@ -1,0 +1,48 @@
+.containerBuscador-principal{
+    display: block;
+    align-content: center;
+    margin-left: 20%;
+    padding-top: 2%;
+    position: relative;
+    overflow: hidden;
+}
+
+.lbl-buscadorGeneral{
+
+    float: left;
+    margin-top: 5px;
+    padding-right: 10px;
+}
+
+.containerBuscador-txt-producto{
+    float: left;
+    width: 50%;
+}
+
+.containerBuscador-btn-producto{
+    padding-left: 10px;
+    float: left;
+}
+/*---------------------------------------------*/
+.inner-addon {
+    position: relative;
+    display: initial;
+ 
+  }
+  .inner-addon .fa {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+    /*padding-top: 10px;*/
+    padding-right: 22px;
+    color: rgb(184, 182, 182);
+  }
+  .left-addon .fa {
+    left: 0px;
+    display: initial;
+  }
+
+  .left-addon input {
+    padding-left: 30px;
+  }
+ 
