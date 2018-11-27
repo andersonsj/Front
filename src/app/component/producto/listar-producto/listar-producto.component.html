@@ -4,14 +4,15 @@
 
 <div class="container-fluid listarProducto">
 
-    <div class="row ">
-        <span id="titulo">Resultados de la búsqueda</span>
+    <div class="titulo">
+        <span>Resultados de la búsqueda</span>
     </div>
 
     <br>
 
+
     <div class="contenedor cont-principal">
-        
+
         <div class="info-producto col-md-3" *ngFor="let producto of datos">
             <div class="col-2 col-md-12">
                 <div class="form-group fila-1">
@@ -29,14 +30,14 @@
             </div>
             <div class="col-1 col-md-12">
                 <img src="https://homecenterco.scene7.com/is/image/SodimacCO/{{producto.sku}}_1?wid=400&amp;hei=400"
-                    class="img-thumbnail" alt="Responsive image">
+                     alt="Responsive image">
                 <h5>{{producto.nombre}}</h5>
                 <h6>Sku {{producto.sku}}</h6>
                 <h4>${{producto.precio}}</h4>
                 <br>
             </div>
         </div>
-        
+
     </div>
 
     <aside class="paginacion">
