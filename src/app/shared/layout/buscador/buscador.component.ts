@@ -22,12 +22,15 @@ export class BuscadorComponent implements OnInit {
     this.buscar = localStorage.getItem('buscar');
     console.log('buscador general productos');
     console.log(this.buscar);
-    this.buscarProducto();
+
   }
 
   buscarProducto() {
 
-    this.productoService.getBuscarProductos(this.buscar).subscribe(
+
+    localStorage.setItem('buscar', this.buscadorGeneralForm.get('txtBuscadorGeneral').value);
+
+    this.productoService.getBuscarProductos(localStorage.getItem('buscar')).subscribe(
       (data) => {
         this.datos = data.value;
         console.log(this.datos);
@@ -35,6 +38,8 @@ export class BuscadorComponent implements OnInit {
 
       }
     );
+
+
   }
 
 }

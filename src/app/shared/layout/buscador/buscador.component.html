@@ -1,16 +1,19 @@
-<div id="containerBusqueda" class="containerBuscador-principal form-group">
 
-  <div class="lbl-buscadorGeneral form-group">
-    <label>¿Qué producto buscas?</label>
+  <div id="containerBusqueda" class="containerBuscador-principal form-group">
+
+    <div class="lbl-buscadorGeneral form-group">
+      <label>¿Qué producto buscas?</label>
+    </div>
+    <form [formGroup]="buscadorGeneralForm">
+      <div id="containerBuscador" class="form-group containerBuscador-txt-producto inner-addon left-addon">
+        <i class="fa fa-search"></i>
+        <input class="form-control" id="txtBuscador" name="txtBuscador" formControlName="txtBuscadorGeneral" type="text"
+          placeholder="Escribe el sku del producto..." />
+      </div>
+      <div class="form-group containerBuscador-btn-producto" id="btnBuscarProducto">
+        <button class="btn btn-primary" id="btn_buscarProd" (click)="buscarProducto()" routerLink="/listarProductos"
+          routerLinkActive="active">Buscar</button>
+      </div>
+    </form>
   </div>
-  <form [formGroup]="buscadorGeneralForm">
-    <div id="containerBuscador" class="form-group containerBuscador-txt-producto inner-addon left-addon">
-      <i class="fa fa-search"></i>
-      <input class="form-control" id="txtBuscador" name="txtBuscador" formControlName="txtBuscadorGeneral" type="text"
-        placeholder="Escribe el sku del producto..." />
-    </div>
-    <div class="form-group containerBuscador-btn-producto" id="btnBuscarProducto">
-      <button class="btn btn-primary" id="btn_buscarProd" (click)="buscarProducto()" routerLink="/listarProductos" routerLinkActive="active">Buscar</button>
-    </div>
-  </form>
-</div>
+

@@ -1,5 +1,7 @@
 <app-buscador></app-buscador>
 
+
+
 <div class="container-fluid listarProducto">
 
     <div class="row ">
@@ -8,53 +10,47 @@
 
     <br>
 
-    <div class="row center">
-        <div class="col bg-transparent col-md-3" *ngFor="let producto of datos">
-            <img src="https://homecenterco.scene7.com/is/image/SodimacCO/{{producto.sku}}_1?wid=400&amp;hei=400" class="img-thumbnail"
-                alt="Responsive image">
-            <div class="row center cont-principal">
-                <div class="info-producto col-md-3" *ngFor="let producto of datos">
-                    <div class="col-2 col-md-12">
-                        <div class="form-group fila-1">
-                            <button class="btn btn-primary col-md-3" id="btn-cantidadMenos">-</button>
-                            <input class="form-control col-md-4" type="text" id="txt-cantidad" />
-                            <button class="btn btn-primary col-md-3" id="btn-cantidadMas">+</button>
-                        </div>
-                        <div class="form-group fila-2">
-                            <button id="btn-carrito" class="btn btn-primary">Agregar al carro</button>
-                        </div>
-                        <div class="form-group">
-                            <button id="btn-detalle" class="btn btn-primary">Ver detalle</button>
-                        </div>
-                    </div>
-                    <div class="col-1 col-md-12">
-                        <img src="https://homecenterco.scene7.com/is/image/SodimacCO/{{producto.sku}}_1?wid=400&amp;hei=400"
-                            class="img-thumbnail" alt="Responsive image">
-                        <h5>{{producto.nombre}}</h5>
-                        <h6>Sku {{producto.sku}}</h6>
-                        <h4>${{producto.precio}}</h4>
-                        <br>
-                    </div>
-
+    <div class="contenedor cont-principal">
+        
+        <div class="info-producto col-md-3" *ngFor="let producto of datos">
+            <div class="col-2 col-md-12">
+                <div class="form-group fila-1">
+                    <button class="btn btn-primary col-md-3" id="btn-cantidadMenos" (click)="restarCantidad()">-</button>
+                    <input class="form-control col-md-4" type="text" id="txt-cantidad" value="{{cantidadProducto}}" />
+                    <button class="btn btn-primary col-md-3" id="btn-cantidadMas" (click)="sumarCantidad()">+</button>
                 </div>
-
-                <aside class="paginacion">
-                    <div id="controles">
-                        <div>
-                            <button type="button" class="btn btn-default btn-circle btn-xl"><i class="fa fa-arrow-up blue"></i>
-                            </button>
-                        </div>
-                        <br>
-                        <div>
-                            <button type="button" class="btn btn-default btn-circle btn-xl"><i class="fa fa-arrow-down"></i>
-                            </button>
-                        </div>
-                    </div>
-                </aside>
-
-
-
-
-
-
+                <div class="form-group fila-2">
+                    <button id="btn-carrito" class="btn btn-primary">Agregar al carro</button>
+                </div>
+                <div class="form-group">
+                    <button id="btn-detalle" class="btn btn-primary" routerLink="/detalleProducto" routerLinkActive="active">Ver
+                        detalle</button>
+                </div>
             </div>
+            <div class="col-1 col-md-12">
+                <img src="https://homecenterco.scene7.com/is/image/SodimacCO/{{producto.sku}}_1?wid=400&amp;hei=400"
+                    class="img-thumbnail" alt="Responsive image">
+                <h5>{{producto.nombre}}</h5>
+                <h6>Sku {{producto.sku}}</h6>
+                <h4>${{producto.precio}}</h4>
+                <br>
+            </div>
+        </div>
+        
+    </div>
+
+    <aside class="paginacion">
+        <div id="controles">
+            <div>
+                <button type="button" class="btn btn-default btn-circle btn-xl"><i class="fa fa-arrow-up blue"></i>
+                </button>
+            </div>
+            <br>
+            <div>
+                <button type="button" class="btn btn-default btn-circle btn-xl"><i class="fa fa-arrow-down"></i>
+                </button>
+            </div>
+        </div>
+    </aside>
+
+</div>

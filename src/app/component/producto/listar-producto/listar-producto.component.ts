@@ -7,9 +7,10 @@ import { ProductoService } from 'src/app/core/services/producto/producto.service
   styleUrls: ['./listar-producto.component.css']
 })
 export class ListarProductoComponent implements OnInit {
- 
+
   public buscar: string;
   private datos: any;
+  private cantidadProducto: any = 1;
 
   constructor(private productoService: ProductoService) { }
 
@@ -32,6 +33,17 @@ export class ListarProductoComponent implements OnInit {
 
       }
     );
+  }
+
+
+  restarCantidad() {
+    if (this.cantidadProducto > 1) {
+      this.cantidadProducto = this.cantidadProducto - 1;
+    }
+  }
+
+  sumarCantidad() {
+    this.cantidadProducto = this.cantidadProducto + 1;
   }
 
 }
