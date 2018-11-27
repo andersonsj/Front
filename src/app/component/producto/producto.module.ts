@@ -9,7 +9,7 @@ import { ListarProductoComponent } from './listar-producto/listar-producto.compo
 import { ProductoComponent } from './producto.component';
 import { ProductoRouting } from 'src/app/core/routes/producto.routing';
 import { DetalleProductoComponent } from './detalle-producto/detalle-producto.component';
-
+import { BuscadorComponent } from '../../shared/layout/buscador/buscador.component';
 
 @NgModule({
   imports: [
@@ -17,10 +17,15 @@ import { DetalleProductoComponent } from './detalle-producto/detalle-producto.co
     ProductoRouting,
     ReactiveFormsModule
   ],
-  declarations: [BuscarProductoComponent, ListarProductoComponent, ProductoComponent, DetalleProductoComponent],
+  declarations: [BuscarProductoComponent,
+    ListarProductoComponent,
+    ProductoComponent,
+    DetalleProductoComponent,
+    BuscadorComponent],
   exports: [
     BuscarProductoComponent,
-    DetalleProductoComponent
+    DetalleProductoComponent,
+    BuscadorComponent
       ]
 })
 export class ProductoModule { }
