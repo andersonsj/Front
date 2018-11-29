@@ -10,8 +10,8 @@
 
     <div class="contenedor cont-principal" >
 
-        <div class="info-producto col-md-3" *ngFor="let producto of datos" >
-            <div class="col-2 col-md-12" (mouseleave)="cantidadIni()">
+        <div class="info-producto col-md-3" *ngFor="let producto of datos; let cont = index" >
+            <div class="col-2 col-md-12" (mouseleave)="cantidadIni()" (mouseover)="identificarProducto(cont)">
                 <form [formGroup]="productoForm">
                     <div class="form-group fila-1" >
                         <button class="btn btn-primary col-md-3" id="btn-cantidadMenos" (click)="restarCantidad()">-</button>
