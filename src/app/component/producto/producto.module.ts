@@ -10,6 +10,7 @@ import { ProductoComponent } from './producto.component';
 import { ProductoRouting } from 'src/app/core/routes/producto.routing';
 import { DetalleProductoComponent } from './detalle-producto/detalle-producto.component';
 import { BuscadorComponent } from '../../shared/layout/buscador/buscador.component';
+import { BuscadorModule } from 'src/app/shared/layout/buscador/buscador.module';
 
 @NgModule({
   imports: [
@@ -21,11 +22,11 @@ import { BuscadorComponent } from '../../shared/layout/buscador/buscador.compone
     ListarProductoComponent,
     ProductoComponent,
     DetalleProductoComponent,
-    BuscadorComponent],
+    BuscadorComponent
+    ],
   exports: [
     BuscarProductoComponent,
-    DetalleProductoComponent,
-    BuscadorComponent
-      ]
+    DetalleProductoComponent
+  ]
 })
 export class ProductoModule { }

@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Component, OnInit, ChangeDetectionStrategy, Input } from '@angular/core';
 import { ProductoService } from 'src/app/core/services/producto/producto.service';
 
 @Component({
   selector: 'app-listar-producto',
   templateUrl: './listar-producto.component.html',
-  styleUrls: ['./listar-producto.component.css']
+  styleUrls: ['./listar-producto.component.css'],
+  changeDetection: ChangeDetectionStrategy.Default
 })
 export class ListarProductoComponent implements OnInit {
 
   productoForm: FormGroup;
+  @Input() productoBuscar: string;
+
   public buscar: string;
   private datos: any;
   private cantidadProducto: any = 1;
@@ -22,20 +26,15 @@ export class ListarProductoComponent implements OnInit {
       txtCantidad: ['', Validators.required]
     });
     this.buscar = localStorage.getItem('buscar');
-    console.log('listar productos');
-    console.log('this.buscar');
     this.buscarProducto();
-
+    console.log('Paso de un tes a otro');
+    console.log(this.productoBuscar);
   }
 
   buscarProducto() {
-
     this.productoService.getBuscarProductos(this.buscar).subscribe(
       (data) => {
         this.datos = data.value;
-        console.log(this.datos);
-        console.log(data);
-
       }
     );
   }
@@ -61,6 +60,11 @@ export class ListarProductoComponent implements OnInit {
 
   sumarCantidad() {
     this.cantidadProducto = this.cantidadProducto + 1;
+  }
+
+  getMensaje(e) {
+    this.buscar = localStorage.getItem('buscar');
+    this.buscarProducto();
   }
 
 }

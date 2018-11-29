@@ -1,13 +1,10 @@
-<app-buscador></app-buscador>
-
-
+<app-buscador (enviar)="getMensaje($event)"></app-buscador>
 
 <div class="container-fluid listarProducto">
 
     <div class="titulo">
         <span>Resultados de la búsqueda</span>
     </div>
-
     <br>
 
 
@@ -32,10 +29,10 @@
             </div>
             <div class="col-1 col-md-12" >
                 <img src="https://homecenterco.scene7.com/is/image/SodimacCO/{{producto.sku}}_1?wid=400&amp;hei=400"
-                     alt="Responsive image">
+                    alt="Responsive image">
                 <h5>{{producto.nombre}}</h5>
                 <h6>Sku {{producto.sku}}</h6>
-                <h4>${{producto.precio}}</h4>
+                <h4>{{producto.precio | currency}}</h4>
                 <br>
             </div>
         </div>
