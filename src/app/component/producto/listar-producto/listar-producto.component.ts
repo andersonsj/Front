@@ -42,9 +42,7 @@ export class ListarProductoComponent implements OnInit {
     this.cantidadProducto = this.cantidadProducto + 1;
   }
 
-
   getMensaje(e) {
-    alert(e);
     this.buscar = localStorage.getItem('buscar');
     this.buscarProducto();
   }

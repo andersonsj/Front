@@ -28,7 +28,6 @@ export const routes: Routes = [
         loadChildren: 'app/component/produto/producto.module#ProductoModule'
       }
     ]
-    runGuardsAndResolvers: 'always',
   },
 
 ];
