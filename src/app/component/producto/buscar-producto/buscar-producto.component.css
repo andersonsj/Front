@@ -5,20 +5,27 @@
 
   .containerBuscador-principal h2 {
     color: black;
-    font-weight: bold;
     font-size: 24px;
+    font-family: Helvetica;
+    line-height: 1.2;
   }
 
  #containerBusqueda {
     align-content: center;
     float: initial;
-    padding-top: 10%;
+    padding-top: 15%;
  }
 
- #containerBuscador {
+ .containerBuscador {
     padding-top: 15px;
     padding-bottom: 17px;
     align-content: center;
+   
+ }
+
+ .containerBuscador h2{
+  font-family: Helvetica;
+  font-size: 24px;
  }
 
  #formBusquedaProducto {
@@ -32,9 +39,14 @@
  }
 
  #btn_buscarProd {
-    width: 12%;
+ 
     display: initial;
     margin-top: 20px;
+
+    width: 187px;
+    height: 37px;
+    background-color: #0071b9;
+
  }
 /*---------------------------------------------*/
    .inner-addon {

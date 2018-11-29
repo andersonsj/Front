@@ -17,8 +17,6 @@ export class CollapseMenuComponent implements OnInit {
   ngOnInit() {
   }
 
-
-
   openNav() {
     document.getElementById('mySidenav').style.width = '250px';
     document.getElementById('main').style.marginLeft = '250px';
@@ -47,8 +45,6 @@ export class CollapseMenuComponent implements OnInit {
       this.consultaCliente = '';
       this.estadoNav = 0;
       console.log('Segundo if');
-    } else {
-
     }
 
   }

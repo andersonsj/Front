@@ -33,7 +33,7 @@ import { MainLayoutComponent } from './shared/layout/app-layouts/main-layout/mai
     BrowserModule,
     HttpClientModule,
     CoreModule,
-    Routing,
+    AppRoutingModule,
     LayoutModule,
     ReactiveFormsModule,
     EmpleadoModule,

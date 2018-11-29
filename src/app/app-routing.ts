@@ -1,7 +1,6 @@
 import { Routes, RouterModule } from '@angular/router';
 import { MainLayoutComponent } from './shared/layout/app-layouts/main-layout/main-layout.component';
 import { ModuleWithProviders } from '@angular/compiler/src/core';
-import { ClienteModule } from './component/cliente/cliente.module';
 
 export const routes: Routes = [
     {

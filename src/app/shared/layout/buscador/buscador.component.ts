@@ -1,7 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, ViewChild, EventEmitter } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { ProductoService } from './../../../../app/core/services/producto/producto.service';
-
 
 @Component({
   selector: 'app-buscador',
@@ -10,36 +8,30 @@ import { ProductoService } from './../../../../app/core/services/producto/produc
 })
 export class BuscadorComponent implements OnInit {
 
+
+  @Output() enviar = new EventEmitter<string>();
+  mensaje = 'estoy en el hijo';
+
   public buscar: string;
-  private datos: any;
+
   buscadorGeneralForm: FormGroup;
-  constructor(private formBuilder: FormBuilder, private productoService: ProductoService) { }
+  constructor(private formBuilder: FormBuilder) {
+  }
 
   ngOnInit() {
+
     this.buscadorGeneralForm = this.formBuilder.group({
       txtBuscadorGeneral: ['', Validators.required]
     });
-    this.buscar = localStorage.getItem('buscar');
-    console.log('buscador general productos');
-    console.log(this.buscar);
 
   }
 
-  buscarProducto() {
 
-
+  recargar() {
     localStorage.setItem('buscar', this.buscadorGeneralForm.get('txtBuscadorGeneral').value);
-
-    this.productoService.getBuscarProductos(localStorage.getItem('buscar')).subscribe(
-      (data) => {
-        this.datos = data.value;
-        console.log(this.datos);
-        console.log(data);
-
-      }
-    );
-
-
+    this.enviar.emit(this.mensaje);
   }
+
+
 
 }
