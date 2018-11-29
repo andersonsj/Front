@@ -1,4 +1,133 @@
+
 .detalle{
+    padding: 0;
+    margin-left: 4%;
+    
+}
+
+.volver {
+    overflow: hidden;
+    margin-left: 120px;
+}
+
+.imgMini:hover{
+    border-color: blue;
+}
+
+.imgMini {
+    margin: 0 0 4px 60px;
+}
+
+.miniatura{
+    float: left;
+    position: inherit;
+    padding: 0 2px 2px 2px;
+}
+
+.img{
+    border-image: 1;
+    height: 90%;
+    width: 100%;
+}
+
+.imgPrincipal {
+    position: inherit;
+    float: left;
+    border-image: 1;
+    border-color: black;
+    margin-left: 50px;
+}
+
+.informacionContainer {
+    padding-left: 0;
+}
+
+.infoProducto {
+    padding-left: 0;
+    padding-top: 40px;
+    overflow: hidden;
+    height: 70%;
+}
+
+.infoProducto h2{
+    padding-top: 50px;
+}
+
+.botones-opciones{
+    height: 30%;
+    margin-top: 1%;
+}
+.opcionesProducto {
+    position: initial;
+    margin: 0;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 90px;
+    
+}
+
+#btn-cantidadMenos{
+    padding-right: 5px;
+    font-weight: bold;
     text-align: center;
-    padding: 1rem;
+
+}
+
+#btn-cantidadMas{
+    font-weight: bold;
+    text-align: center;
+
+}
+
+#btn-carrito-detalle{
+    margin-left: 10px;
+
+}
+
+.btn-link {
+    text-decoration: none;
+    color: black;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;   
+}
+
+.ficha-tecnica {
+    margin-left: 5%;
+    margin-bottom: 50px;
+    width: 100%;
+    
+}
+
+.info-ficha-tecnica {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.atributo {
+    margin: 0;
+    padding-right: 0;
+
+}
+
+.atributo h6{
+    margin-bottom: 0;
+    border-bottom: 2px solid rgba(0,0,0,.125);
+}
+
+.detalle{
+    margin: 0;
+    padding-top: 20px;
+}
+.detalle-2{
+    border-left: 2px solid rgba(0,0,0,.125);
+    padding: 0 0 0 10px;
+    margin-top: 0;
+}
+
+.detalle h6{
+    margin-bottom: 0;
+    border-bottom: 2px solid rgba(0,0,0,.125);
 }

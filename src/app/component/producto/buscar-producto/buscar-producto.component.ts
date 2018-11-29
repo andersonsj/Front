@@ -25,7 +25,9 @@ export class BuscarProductoComponent implements OnInit {
   public autenticar: any;
   public pasar: any;
   public estacion: Estacion = {
-    ipEstacion: null
+    ipEstacion: null,
+    idAlmacen: null,
+    idZona: null
   };
 
   ngOnInit() {
@@ -35,15 +37,15 @@ export class BuscarProductoComponent implements OnInit {
     let ip;
     ip = localStorage.getItem('ipEquipo');
     this.estacion.ipEstacion = ip;
-    /*
+    
     this.identificarTiendaPorIp();
-    A la espera de servicio back para consultar tienda
-    */
   }
 
   identificarTiendaPorIp() {
-    console.log('IP estacion:' + this.estacion.ipEstacion); /**probar captura de IP al cargar página */
-    this.almacenService.postIdentificarTienda(this.estacion).subscribe(data => data);
+    //console.log('IP estacion:' + this.estacion.ipEstacion); /**probar captura de IP al cargar página */
+    //this.almacenService.postIdentificarTienda(this.estacion).subscribe(data => data);
+    this.almacenService.postIdentificarTienda()
+    .subscribe(data => data);
   }
 
 

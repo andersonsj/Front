@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetalleProductoComponent implements OnInit {
 
+  private cantidadProducto: any;
   constructor() { }
 
   ngOnInit() {
+    this.cantidadProducto = localStorage.getItem('cantidadProducto');
+    this.cantidadProducto = 1;
   }
 
+  restarCantidad() {
+    if (this.cantidadProducto > 1) {
+      this.cantidadProducto = this.cantidadProducto - 1;
+    }
+  }
+
+  sumarCantidad() {
+    this.cantidadProducto = this.cantidadProducto + 1;
+  }
+  
 }
