@@ -13,23 +13,15 @@
 .listarProducto h5 {
     font-size: 15px;
     line-height: 1.2;
-    letter-spacing: normal;
-    text-align: left;
 }
 
 .listarProducto h6 {
-    font-family: Helvetica;
     font-size: 12px;
-    letter-spacing: normal;
-    text-align: left;
 }
 
 .listarProducto h4 {
-    font-family: Helvetica;
     font-size: 22px;
     font-weight: bold;
-    letter-spacing: normal;
-    text-align: left;
 }
 
 .listarProducto img {
@@ -39,8 +31,6 @@
 
 .titulo {
     font-size: 26px;
-    letter-spacing: normal;
-    text-align: left;
     color: #2e3239;
     margin-right: 0%;
     margin-left: 6%;
