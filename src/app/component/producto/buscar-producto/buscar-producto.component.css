@@ -1,26 +1,23 @@
   .containerBuscador-principal {
     align-items: center;
     text-align: center;
+    font-family: Helvetica;
+    align-content: center;
+    float: initial;
+    padding-top: 15%;
   }
 
   .containerBuscador-principal h2 {
     color: black;
     font-size: 24px;
-    font-family: Helvetica;
     line-height: 1.2;
   }
 
- #containerBusqueda {
-    align-content: center;
-    float: initial;
-    padding-top: 15%;
- }
 
  .containerBuscador {
     padding-top: 15px;
     padding-bottom: 17px;
     align-content: center;
-   
  }
 
  .containerBuscador h2{
@@ -42,13 +39,12 @@
  
     display: initial;
     margin-top: 20px;
-
     width: 187px;
     height: 37px;
     background-color: #0071b9;
 
  }
-/*---------------------------------------------*/
+
    .inner-addon {
     position: relative;
     display: initial;
@@ -58,7 +54,6 @@
     position: absolute;
     padding: 10px;
     pointer-events: none;
-    /*padding-top: 10px;*/
     padding-right: 22px;
     color: rgb(184, 182, 182);
   }
