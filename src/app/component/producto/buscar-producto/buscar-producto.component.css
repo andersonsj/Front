@@ -1,68 +1,53 @@
   .containerBuscador-principal {
-    align-items: center;
-    text-align: center;
-    font-family: Helvetica;
-    align-content: center;
-    float: initial;
-    padding-top: 15%;
+      align-items: center;
+      text-align: center;
+      font-family: Helvetica;
+      align-content: center;
+      float: initial;
+      padding-top: 15%;
+      color: black;
   }
 
   .containerBuscador-principal h2 {
-    color: black;
-    font-size: 24px;
-    line-height: 1.2;
+      font-size: 24px;
+      line-height: 1.2;
   }
 
-
- .containerBuscador {
-    padding-top: 15px;
-    padding-bottom: 17px;
-    align-content: center;
- }
-
- .containerBuscador h2{
-  font-family: Helvetica;
-  font-size: 24px;
- }
-
- #formBusquedaProducto {
-    align-items: center;
-    text-align: center;
- }
-  
- #txtBuscador {
-     width: 50%;
-     display: initial;
- }
-
- #btn_buscarProd {
- 
-    display: initial;
-    margin-top: 20px;
-    width: 187px;
-    height: 37px;
-    background-color: #0071b9;
-
- }
-
-   .inner-addon {
-    position: relative;
-    display: initial;
- 
+  #formBusquedaProducto {
+      align-items: center;
+      text-align: center;
   }
+
+  #txtBuscador {
+      width: 50%;
+      display: initial;
+  }
+
+  #btn_buscarProd {
+      display: initial;
+      margin-top: 20px;
+      width: 187px;
+      height: 37px;
+      background-color: #0071b9;
+  }
+
+  .inner-addon {
+      position: relative;
+      display: initial;
+  }
+
   .inner-addon .fa {
-    position: absolute;
-    padding: 10px;
-    pointer-events: none;
-    padding-right: 22px;
-    color: rgb(184, 182, 182);
+      position: absolute;
+      padding: 10px;
+      pointer-events: none;
+      padding-right: 22px;
+      color: rgb(184, 182, 182);
   }
+
   .left-addon .fa {
-    left: 0px;
-    display: initial;
+      padding: 10px;
   }
 
   .left-addon input {
-    padding-left: 30px;
+      padding-left: 30px;
   }
- 

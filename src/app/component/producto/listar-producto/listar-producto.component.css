@@ -110,7 +110,6 @@
 }
 
 .fila-1 {
-    display: inline-block;
     position: initial;
     overflow: hidden;
     margin: 30% auto 12px auto;
@@ -144,10 +143,6 @@
 #btn-cantidadMas {
     float: left;
     text-align: center;
-}
-
-rowcont-principal {
-    position: absolute;
 }
 
 .contenedor {
