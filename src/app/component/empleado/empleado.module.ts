@@ -9,7 +9,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     ReactiveFormsModule
   ],
-  declarations: [BuscarEmpleadoComponent, AutenticarEmpleadoComponent],
+  declarations: [
+    BuscarEmpleadoComponent,
+    AutenticarEmpleadoComponent
+  ],
   exports: [
     AutenticarEmpleadoComponent
   ]

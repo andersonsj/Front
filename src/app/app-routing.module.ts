@@ -17,15 +17,15 @@ export const routes: Routes = [
       },
       {
         path: 'cliente',
-        loadChildren: 'app/component/cliente/cliente.module#ClienteModule'
+        loadChildren: './component/cliente/cliente.module#ClienteModule'
       },
       {
         path: 'empleado',
-        loadChildren: 'app/component/empledo/empleado.module#EmpleadoModule'
+        loadChildren: './component/empledo/empleado.module#EmpleadoModule'
       },
       {
         path: 'producto',
-        loadChildren: 'app/component/produto/producto.module#ProductoModule'
+        loadChildren: './component/produto/producto.module#ProductoModule'
       }
     ]
   },
@@ -36,7 +36,6 @@ export const routes: Routes = [
   exports: [RouterModule],
   imports: [RouterModule.forRoot(routes, {
     preloadingStrategy: PreloadAllModules,
-    onSameUrlNavigation: 'reload'
   })],
 })
 

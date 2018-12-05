@@ -8,8 +8,6 @@ import { NavigationModule } from './navigation';
 import { RouterModule } from '@angular/router';
 import { EmpleadoModule } from 'src/app/component/empleado/empleado.module';
 import { ClienteModule } from 'src/app/component/cliente/cliente.module';
-import { BuscadorComponent } from './buscador/buscador.component';
-
 
 @NgModule({
   imports: [
@@ -18,8 +16,8 @@ import { BuscadorComponent } from './buscador/buscador.component';
     NavigationModule,
     ProductoModule,
     EmpleadoModule,
-    RouterModule,
-    ClienteModule
+    ClienteModule,
+    RouterModule
   ],
   declarations: [
     EmptyLayoutComponent,

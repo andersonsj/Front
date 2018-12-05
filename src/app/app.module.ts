@@ -5,13 +5,14 @@ import { UrlproviderService } from './util/endpoint/urlprovider.service';
 import { LayoutModule } from './shared/layout/layout.module';
 import { ProductoModule } from './component/producto/producto.module';
 import { EmpleadoModule } from './component/empleado/empleado.module';
-import { ClienteModule } from './component/cliente/cliente.module';
 import { Routing } from './app-routing';
 import { CoreModule } from './core/core.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { Configuration } from './Util/configuration';
 import { HomeModule } from './component/home/home.module';
+import { AppRoutingModule } from './app-routing.module';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +27,6 @@ import { HomeModule } from './component/home/home.module';
     ReactiveFormsModule,
     EmpleadoModule,
     ProductoModule,
-    ClienteModule,
     HomeModule
   ],
   providers: [UrlproviderService, Configuration],

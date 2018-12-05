@@ -15,15 +15,15 @@ export const routes: Routes = [
             },
             {
                 path: 'cliente',
-                loadChildren: 'app/component/cliente/cliente.module#ClienteModule'
+                loadChildren: './component/cliente/cliente.module#ClienteModule'
             },
             {
                 path: 'empleado',
-                loadChildren: 'app/component/empledo/empleado.module#EmpleadoModule'
+                loadChildren: './component/empleado/empleado.module#EmpleadoModule'
             },
             {
                 path: 'producto',
-                loadChildren: 'app/component/produto/producto.module#ProductoModule'
+                loadChildren: './component/producto/producto.module#ProductoModule'
             }
         ]
     },

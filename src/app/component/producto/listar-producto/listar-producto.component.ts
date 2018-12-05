@@ -49,8 +49,8 @@ export class ListarProductoComponent implements OnInit {
     );
   }
 
-  identificarProducto(identificador: any){
-    console.log("identificador: "+identificador);
+  identificarProducto(identificador: any) {
+    console.log('identificador: ' + identificador);
     this.sku = this.datos[identificador].sku;
     this.nombre = this.datos[identificador].nombre;
     this.precio = this.datos[identificador].precio;
@@ -62,12 +62,12 @@ export class ListarProductoComponent implements OnInit {
     this.modelo = this.datos[identificador].ficha.modelo;
     this.observaciones = this.datos[identificador].ficha;
     this.ficha = this.datos[identificador].ficha;
-    console.log("sku: " + this.sku);
+    console.log('sku: ' + this.sku);
 
   }
 
-  guardarDetalle(){
-    console.log("Cantidad de producto");
+  guardarDetalle() {
+    console.log('Cantidad de producto');
     console.log(this.productoForm.get('txtCantidad').value);
     localStorage.setItem('cantidadProducto', this.productoForm.get('txtCantidad').value);
     localStorage.setItem('skuProducto', this.sku);
@@ -83,8 +83,8 @@ export class ListarProductoComponent implements OnInit {
     localStorage.setItem('ficha', JSON.stringify(this.ficha));
   }
 
-  cantidadIni(){ 
-    console.log("Cantidad reiniciada a 1");
+  cantidadIni() {
+    console.log('Cantidad reiniciada a 1');
     this.cantidadProducto = 1;
   }
 
@@ -102,5 +102,4 @@ export class ListarProductoComponent implements OnInit {
     this.buscar = localStorage.getItem('buscar');
     this.buscarProducto();
   }
-
 }

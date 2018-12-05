@@ -32,8 +32,8 @@ export class DetalleProductoComponent implements OnInit {
     this.materialPatas = localStorage.getItem('materialPatas');
     this.modelo = localStorage.getItem('modelo');
     this.observaciones = localStorage.getItem('observaciones');
-    
-    console.log("sku producto detalle: "+ this.skuProducto);
+
+    console.log('sku producto detalle: ' + this.skuProducto);
     this.cantidadProducto = 1;
   }
 
@@ -46,5 +46,4 @@ export class DetalleProductoComponent implements OnInit {
   sumarCantidad() {
     this.cantidadProducto = this.cantidadProducto + 1;
   }
-  
 }

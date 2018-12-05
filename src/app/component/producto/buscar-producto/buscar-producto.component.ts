@@ -40,19 +40,18 @@ export class BuscarProductoComponent implements OnInit {
     let ip;
     ip = localStorage.getItem('ipEquipo');
     this.estacion.ipEstacion = ip;
-    
+
     this.identificarTiendaPorIp();
   }
 
   identificarTiendaPorIp() {
-    //console.log('IP estacion:' + this.estacion.ipEstacion); /**probar captura de IP al cargar página */
-    //this.almacenService.postIdentificarTienda(this.estacion).subscribe(data => data);
+    /**console.log('IP estacion:' + this.estacion.ipEstacion); probar captura de IP al cargar página
+        this.almacenService.postIdentificarTienda(this.estacion).subscribe(data => data);*/
     this.almacenService.postIdentificarTienda()
-    .subscribe(data => data);
+      .subscribe(data => data);
   }
 
   buscarProducto() {
     localStorage.setItem('buscar', this.buscarForm.get('txtBuscador').value);
   }
-
 }
