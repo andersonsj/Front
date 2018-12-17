@@ -7,7 +7,7 @@ module.exports = function (grunt) {
         war: {
             target: {
                 options: {
-                    war_dist_folder: './', /* Folder where to generate the WAR. */
+                    war_dist_folder: 'C:/Liberty Server/wlp/usr/servers/sapsserver/apps/', /* Folder where to generate the WAR. */
                     war_name: 'war-angular'                /* The name fo the WAR file (.war will be the extension) */
 				},
                 files: [
