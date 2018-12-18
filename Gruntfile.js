@@ -1,9 +1,18 @@
 module.exports = function (grunt) {
 
-    grunt.loadNpmTasks('grunt-war');
     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+
+        // Minify
+        uglify: {
+            js: { 
+                src: ['./Gruntfile.js'],
+                dest: './dist/FrontAsesoria/Gruntfile.js'
+            }
+        },
+
+        // War Generation
         war: {
             target: {
                 options: {
@@ -22,5 +31,10 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask('default', ['war']);
+    // load task
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-war');
+
+    // register task
+    grunt.registerTask('default', ['uglify', 'war']);
 };
